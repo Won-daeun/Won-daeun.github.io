@@ -5,3 +5,29 @@
 /* Keep a consistent gap within each project column. */
 .project-column{display:flex;flex-direction:column;gap:45px;min-width:0}
 @media(max-width:700px){.projects{display:flex;flex-direction:column;gap:28px}.project-column{display:contents}.projects>.project-column>.project{width:100%}}
+
+/* Editorial introduction: restrained yellow accents and clear alignment. */
+.hero{grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:88px;padding:88px 0 96px}
+.hero h1{font-size:clamp(34px,3.75vw,50px);line-height:1.45;font-weight:600;letter-spacing:-.055em;margin:28px 0 30px}
+.time-highlight{gap:12px;background:transparent;padding:0;border-radius:0;box-shadow:none}
+.time-highlight>span{background:linear-gradient(transparent 68%,var(--butter) 68%);padding:0 2px}
+.clock-icon{width:30px;height:30px;color:var(--accent);stroke-width:2}
+.hero-name{margin:0 0 18px;font-size:17px}
+.hero .intro{font-size:15px;line-height:1.95}
+.hero figure{width:100%;max-width:350px;justify-self:end;background:transparent;padding:0;border-radius:0}
+.hero figure img{height:420px;border-radius:2px;object-fit:cover;object-position:50% 20%;border:1px solid var(--line)}
+.hero figcaption{padding:16px 0;border-bottom:1px solid var(--line);font-size:10px}
+.hero .button{border-radius:2px;background:var(--butter);border:1px solid #DFCF94;padding:15px 20px;margin-top:22px}
+.hero .button:hover{background:var(--mustard);transform:none}
+.hero-note{margin-top:30px;font-size:9px;letter-spacing:.16em}
+#about .section-head .eyebrow{background:transparent;padding:0;border-radius:0}
+#about h2{font-size:34px;font-weight:600}
+.principles{gap:36px;margin-top:42px}
+.principles>div{background:transparent;border-top:2px solid var(--butter);padding:22px 0 0;border-radius:0}
+.principles h3{font-size:18px;margin:16px 0 10px}
+.principles p{font-size:13px}
+.metrics{background:transparent;border-top:1px solid var(--line);border-bottom:1px solid var(--line);border-radius:0;padding:30px 0;margin-top:40px}
+.metrics strong{font-size:42px}
+.metrics>div{border-color:var(--line)}
+@media(max-width:900px) and (min-width:701px){.hero{gap:40px}.hero figure img{height:360px}.hero h1{font-size:36px}}
+@media(max-width:700px){.hero{grid-template-columns:1fr;gap:38px;padding:48px 0 60px}.hero h1{font-size:clamp(29px,7.5vw,38px);margin:22px 0 26px}.clock-icon{width:26px;height:26px}.time-highlight{padding:0;gap:10px}.hero figure{justify-self:start;max-width:300px;margin:0}.hero figure img{height:360px}.hero .intro{font-size:13px}.hero-name{font-size:16px}.principles{gap:24px}.principles>div{padding:18px 0 0}#about h2{font-size:28px}.metrics{padding:26px 0}.metrics strong{font-size:34px}}
